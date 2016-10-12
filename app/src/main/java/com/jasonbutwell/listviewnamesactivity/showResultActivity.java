@@ -3,11 +3,19 @@ package com.jasonbutwell.listviewnamesactivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 public class showResultActivity extends AppCompatActivity {
 
+    // Textview to change the name we got passed in from the other Activity
     private TextView nameTextView;
+
+    // Called when we click the go back button
+    public void goBack(View view) {
+        // close the Activity
+        this.finish();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
